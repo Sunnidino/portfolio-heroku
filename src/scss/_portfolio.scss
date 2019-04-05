@@ -1,0 +1,185 @@
+.portfolio {
+
+  .info-section{
+    width: 20%;
+  }
+
+  .logo {
+    border: 5px solid white;
+    color: white;
+    background:#0e4f91;
+    height: 80px;
+    width: 100px;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    padding: 22px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-section{
+    padding: 54px;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    .info-box{
+      bottom: 60px;
+      position: absolute;
+      h4{
+        font-size: 1.2rem;
+        color: white;
+        margin: 0.7rem 0; //0.7rem (top and bottom) 0(left and right)
+      }
+      p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: white;
+        margin: 0.2rem 0 1.6rem; //(top - sides - bottom)
+      }
+    }
+  }
+
+  .content-area {
+    margin-left: 25%;
+    width: 75%;
+    background: white;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .icon-section{
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 0 10px;
+      &:hover {
+        color: orange;
+      }
+      //shift the icons to align with Find Me On
+      //The :first-child selector is used to select the specified selector, only if it is the first child of its parent.
+      &:first-child{
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .work-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 56px;
+    grid-row-gap: 30px;
+    max-width: 1000px;
+
+    .work-box {
+      padding: 25px;
+      transition: all .5s ease-in-out;
+      &:hover {
+        -webkit-box-shadow: 22px 17px 32px 0px rgba(0,0,0,0.50);
+        -moz-box-shadow: 22px 17px 32px 0px rgba(0,0,0,0.50);
+        box-shadow: 22px 17px 32px 0px rgba(0,0,0,0.50);
+      }
+      img {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      h5 {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
+      }
+
+      p{
+        font-weight: 300;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+      }
+
+      a{
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
+        color: black;
+      }
+    }
+  }
+}
+
+//Responsive code
+
+@media (max-width: 550px) {
+  .portfolio {
+    width: 100%;
+    .info-box {
+      display: block;
+      top: 110%;
+      .icon-section {
+      margin-bottom: 10%;
+      }
+    }
+    .content-area{
+      width: 100%;
+      margin: 0;
+      .work-section{
+        width: 100%;
+        display: block;
+        margin: 10% 10% 10% 0;
+        .work-box{
+          width: 100%;
+          padding: 2%;
+          margin-bottom: 10%;
+          .work-image{
+            background-size: 50px;
+          }
+        }
+      }
+    }
+  }
+ }
+
+ @media (max-width: 700px) {
+   .portfolio {
+     width: 100%;
+     .info-box {
+       display: block;
+       top: 110%;
+       .icon-section {
+       margin-bottom: 10%;
+       }
+     }
+     .content-area{
+       width: 100%;
+       margin: 0;
+       .work-section{
+         width: 100%;
+         display: block;
+         margin: 10% 10% 10% 0;
+         .work-box{
+           width: 100%;
+           padding: 2%;
+           margin-bottom: 10%;
+           .work-image{
+             background-size: 50px;
+           }
+         }
+       }
+     }
+   }
+  }

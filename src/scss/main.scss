@@ -1,0 +1,201 @@
+@import "home";
+//@import "reset";
+//@import "variables";
+@import "resume";
+@import "portfolio";
+//@import "infoSection";
+
+*{
+  box-sizing: border-box; // The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+}
+
+html, body {
+  font-size: 18px;
+  background: #0e4f91;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  height: 100%;
+}
+
+//hamburger-icon code from Font Awesome
+  .menu-icon {
+    position: fixed;
+    right: 36px;
+    top: 36px;
+    z-index: 11;
+    padding: 20px; // create padding near object to ensure the icon is triggered without being exactly on the hamburger-icon
+    .fa{
+      font-size: 2rem;
+      color: #0e4f91;
+      text-decoration: none;
+    }
+  }   //.menu-icon
+
+  #menu {
+    background: #0e4f91;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(-100%,0,0);
+    z-index: 10; //The z-index property specifies the stack order of an element.
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    nav {
+      width: 400px;
+      text-align: center;
+
+      a {
+        display: block;
+        font-size: 3rem;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color:gray;
+        }
+      }
+    }
+  } //#menu
+
+  .menue-active {
+    .menu-icon{
+      .fa {
+        color: white;
+      }
+    }
+    #menu {
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      transform: translate3d(200px,0,0);
+    }
+  }  //.menu-active  */
+
+  .dropbtn {
+  background-color: #0e4f91;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #42f4d7;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #42f4d7;
+}
+
+
+
+// border radius genertor to create btn shape
+ .primary-btn {
+   background:#0e4f91;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   text-align: center;
+   color: white;
+   padding: 15px 30px;
+   display: inline-block;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+     background-color: #42f4d7;
+     color: #0e4f91;
+     font-weight: bold;
+   }
+ }
+
+ .resume-btn {
+   border: 4px solid #0e4f91;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   text-align: center;
+   color: #0e4f91;
+   padding: 12px 27px;
+   display: inline-block;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   margin-left: 15px;
+   font-weight: bold;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+     border: 0;
+     background-color: #42f4d7;
+     color: #0e4f91;
+     font-weight: bold;
+     padding: 15px 30px;
+   }
+ }
+
+
+.scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 56px; //(left side padding)
+}
+
+//Responsive code
+@media (max-width: 768px) {
+  body{
+    background-color: white;
+    .logo {
+      position: absolute;
+      top: 0;
+      left: -2%;
+    }
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+ }
