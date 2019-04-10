@@ -1,6 +1,4 @@
 @import "home";
-//@import "reset";
-//@import "variables";
 @import "resume";
 @import "portfolio";
 //@import "infoSection";
@@ -87,6 +85,7 @@ html, body {
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 0.7rem;
 }
 
 .dropdown-content {
@@ -172,15 +171,14 @@ html, body {
 }
 
 //Responsive code
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body{
     background-color: white;
-    .logo {
-      position: absolute;
-      top: 0;
-      left: -2%;
+    height: 100%;
+    .logo{
+      margin-top: -2rem;
+      margin-left: -2rem;
     }
-
   }
 }
 

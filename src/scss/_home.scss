@@ -76,7 +76,7 @@
 
     .profile {
       h1{
-        font-size: 2.3rem;
+        font-size: 3.0rem;
         font-weight: 800px;
         line-height: 1.2;
         margin: 0 0 1.7rem;
@@ -85,7 +85,7 @@
       span {
         color:#0e4f91;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 4.5rem;
         }
 
       h5 {
@@ -124,17 +124,18 @@
 //Responsive code
 // Small devices (landscape phones, 765px and up)
 @media (max-width: 767px) {
-    .home {
+    .home{
       width: 100%;
       background-color: white;
 
       .content-area{
         margin-left: 0;
+        margin-top: 0;
         width: 100%;
 
           .img-container{
             padding: 40% 2% 0 0;
-            height: 90%;
+            height: 80%;
               .user-img{
                 position:static;
                 justify-content: center;
@@ -162,7 +163,7 @@
           display: none;
         }
       }
-    }
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .home {
@@ -175,7 +176,7 @@
         }
       }
     .profile-section {
-      width: 60%;
+      width: 50%;
       float: right;
       }
     }

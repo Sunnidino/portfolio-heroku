@@ -84,7 +84,7 @@
     max-width: 1000px;
 
     .work-box {
-      padding: 25px;
+      padding: 20px;
       transition: all .5s ease-in-out;
       &:hover {
         -webkit-box-shadow: 22px 17px 32px 0px rgba(0,0,0,0.50);
@@ -124,12 +124,12 @@
 
 //Responsive code
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .portfolio {
     width: 100%;
     .info-box {
       display: block;
-      top: 110%;
+      margin-top: 75%;
       .icon-section {
       margin-bottom: 10%;
       }
@@ -154,12 +154,13 @@
   }
  }
 
- @media (max-width: 700px) {
+ @media (max-width: 767px) {
    .portfolio {
      width: 100%;
      .info-box {
        display: block;
-       top: 110%;
+       top: 100%;
+       padding-top: 2%;
        .icon-section {
        margin-bottom: 10%;
        }
@@ -170,7 +171,7 @@
        .work-section{
          width: 100%;
          display: block;
-         margin: 10% 10% 10% 0;
+         margin: 10% 10% 5% 0;
          .work-box{
            width: 100%;
            padding: 2%;

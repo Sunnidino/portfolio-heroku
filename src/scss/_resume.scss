@@ -110,10 +110,9 @@
 @media (max-width: 500px) {
   .resume {
     width: 100%;
-    .info-box {
-      display: block;
-      top: 110%;
-      padding: 0 0 20% 0;
+    .info-box{
+      margin-top: 40%;
+    }
       .icon-section {
       margin-bottom: 10%;
       }
@@ -127,7 +126,6 @@
         margin: 10% 0 20% 0;
       }
     }
-  }
  }
  @media (max-width: 760px) {
    .resume {
