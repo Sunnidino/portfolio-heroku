@@ -1,22 +1,24 @@
-const express = require('express'),
-  serveStatic= require('serve-static'),
-  path = require('path');
+'use strict';
 
-  //Instantiate Express App
-  const app = Express();
+   const express = require('express'),
+       serveStatic = require('serve-static'),
+       path = require('path');
 
-  //Middleware
-  app.use('/', serveStatic(path.join(_dirname, 'public')));
+   // Instantiate Express App
+   const app = express();
 
-  //Serve index
-  app.use('/', (req, res) => {
-    res.sendFile(_dirname + '/public/src/index.html');
-  });
+   // Middleware
+   app.use('/', serveStatic(path.join(__dirname, '/public')));
 
-  //Port
-  const port = process.env.PORT || 5000;
+   // Serve Index
+   app.get('/', (req, res) => {
+       res.sendFile(__dirname + '/public/index.html');
+   });
 
-  //Start server
-  app.listen(port, () => {
-    console.log(`Server start on ${port}...`);
-  });
+   // Port
+   const port = process.env.PORT || 5000;
+
+   // Start Server
+   app.listen(port, () => {
+       console.log(`Server start on port ${port}...`);
+   });
