@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html",
+    "start": "node server/server",
     "watch": "parcel src/index.html",
     "production": "parcel build src/index.html -d build --public-url ./ --no-minify"
   },
