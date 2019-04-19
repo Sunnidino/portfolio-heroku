@@ -1,11 +1,14 @@
 {
   "name": "webproject",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "web portfolio",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node index.js",
     "watch": "parcel src/index.html",
     "production": "parcel build src/index.html -d build --public-url ./ --no-minify"
   },
