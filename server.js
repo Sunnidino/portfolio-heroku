@@ -5,7 +5,7 @@
        path = require('path');
 
    // Instantiate Express App
-   //const app = express();
+   const app = express();
 
    // Middleware
    app.use('/', serveStatic(path.join(__dirname, '/public')));
